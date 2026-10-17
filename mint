@@ -64,6 +64,10 @@ struct mint {
         return x == other.x;
     }
 
+    bool operator<(const mint &other) const {
+        return x < other.x;
+    }
+
     mint inv() {
         mint a = x;
         return a.pow(mod - 2);
